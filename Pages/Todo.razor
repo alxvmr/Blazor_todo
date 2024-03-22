@@ -34,15 +34,16 @@
                 </tbody>  
             </table>
 
-            <div class="row">
-                <div class="col">
-                    <input class="form-control" placeholder="Место для ввода задачи" @bind="newTodo"/>
+            <form @onsubmit=Enter>
+                <div class="row">
+                    <div class="col">
+                        <input class="form-control" placeholder="Место для ввода задачи" @bind="newTodo"/>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success">Добавить задачу</button>
+                    </div>
                 </div>
-                <div class="col">
-                    <button class="btn btn-success" @onclick="AddTodo">Добавить задачу</button>
-                </div>
-            </div>
-
+            </form>
         </div>
     </div>
 </div>
@@ -52,17 +53,17 @@
     private string newTodo;
     private int curcnt = 0;
 
-    private void AddTodo()
+    private void DeleteTodo(TodoItem deletedItem)
+    {
+        todos.Remove(deletedItem);
+    }
+
+    private void Enter()
     {
         if (!string.IsNullOrWhiteSpace(newTodo))
         {
             todos.Add(new TodoItem { Title = newTodo });
             newTodo = string.Empty;
         }
-    }
-
-    private void DeleteTodo(TodoItem deletedItem)
-    {
-        todos.Remove(deletedItem);
     }
 }

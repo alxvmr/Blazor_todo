@@ -38,8 +38,7 @@
               "RelativeToolTip": "Models\\TodoItem.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T14:33:24.41Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T14:33:24.41Z"
             },
             {
               "$type": "Document",
@@ -51,8 +50,7 @@
               "RelativeToolTip": "Shared\\NavMenu.razor",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-21T13:05:20.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T13:05:20.429Z"
             },
             {
               "$type": "Document",
@@ -64,8 +62,7 @@
               "RelativeToolTip": "Pages\\FetchData.razor",
               "ViewState": "AQIAABEAAAAAAAAAAAAiwBYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-21T12:53:12.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T12:53:12.342Z"
             },
             {
               "$type": "Document",
@@ -75,7 +72,7 @@
               "RelativeDocumentMoniker": "Pages\\Todo.razor",
               "ToolTip": "C:\\Users\\alexe\\source\\repos\\ToDo_List_server\\Pages\\Todo.razor",
               "RelativeToolTip": "Pages\\Todo.razor",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAADoAAAA4AAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAADUAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-21T12:16:53.195Z",
               "EditorCaption": ""

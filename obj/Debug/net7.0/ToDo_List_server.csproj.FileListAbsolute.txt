@@ -33,3 +33,4 @@ C:\Users\alexe\source\repos\ToDo_List_server\bin\Debug\net7.0\BlazorBootstrap.dl
 C:\Users\alexe\source\repos\ToDo_List_server\obj\Debug\net7.0\ToDo_List_server.csproj.AssemblyReference.cache
 C:\Users\alexe\source\repos\ToDo_List_server\obj\Debug\net7.0\ToDo_Lis.EC149A1E.Up2Date
 C:\Users\alexe\source\repos\ToDo_List_server\bin\Debug\net7.0\libman.json
+C:\Users\alexe\source\repos\ToDo_List_server\obj\Debug\net7.0\ToDo_List_server.sourcelink.json
