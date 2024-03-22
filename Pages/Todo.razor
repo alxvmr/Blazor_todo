@@ -1,4 +1,6 @@
-﻿@page "/todo"
+﻿@inject ToDo_List_server.Data.Repository.IRepository repository;
+
+@page "/todo"
 @using System.Collections
 <div class="container-fluid">
     <div class="row">
@@ -24,10 +26,16 @@
                                 </div>
                             </td>
                             <td>
-                                 <input type="checkbox" @bind="@item.IsDone"/>
+                                @if (!item.IsDone){
+                                            <input type="checkbox" @key="@item.Id" value="@item.IsDone" @onchange="(() => StatusChanger(item))"/>
+                                }
+                                else
+                                {
+                                            <input type="checkbox" checked @key="@item.Id" value="@item.IsDone" @onchange="(() => StatusChanger(item))"/>
+                                }
                             </td>
                             <td>
-                                 <button class="btn btn-danger" @onclick="(() => DeleteTodo(item))">Удалить</button>
+                                 <button class="btn btn-danger" @onclick="(() => DeleteTodo(item.Id))">Удалить</button>
                             </td>
                         </tr>
                     }
@@ -49,21 +57,32 @@
 </div>
 
 @code {
-    private IList<TodoItem> todos = new List<TodoItem>();
-    private string newTodo;
-    private int curcnt = 0;
+    private IEnumerable<TodoItem> todos = new List<TodoItem>();
 
-    private void DeleteTodo(TodoItem deletedItem)
+    protected override void OnInitialized()
     {
-        todos.Remove(deletedItem);
+        todos = repository.GetAllItems();
+    }
+
+    private string newTodo;
+
+    private void DeleteTodo(int id)
+    {
+        repository.DeleteItem(id);
     }
 
     private void Enter()
     {
         if (!string.IsNullOrWhiteSpace(newTodo))
         {
-            todos.Add(new TodoItem { Title = newTodo });
+            repository.AddTodo(newTodo);
             newTodo = string.Empty;
         }
+    }
+
+    private void StatusChanger(TodoItem changedItem)
+    {
+        changedItem.IsDone = !changedItem.IsDone;
+        repository.ValueChanged(changedItem);
     }
 }
