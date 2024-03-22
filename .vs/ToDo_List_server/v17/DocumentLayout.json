@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alexe\\source\\repos\\ToDo_List_server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8AB4D601-21B1-45EE-9BA1-9B6B62E7844B}|ToDo_List_server.csproj|c:\\users\\alexe\\source\\repos\\todo_list_server\\pages\\todo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8AB4D601-21B1-45EE-9BA1-9B6B62E7844B}|ToDo_List_server.csproj|solutionrelative:pages\\todo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AB4D601-21B1-45EE-9BA1-9B6B62E7844B}|ToDo_List_server.csproj|c:\\users\\alexe\\source\\repos\\todo_list_server\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AB4D601-21B1-45EE-9BA1-9B6B62E7844B}|ToDo_List_server.csproj|solutionrelative:models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AB4D601-21B1-45EE-9BA1-9B6B62E7844B}|ToDo_List_server.csproj|c:\\users\\alexe\\source\\repos\\todo_list_server\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8AB4D601-21B1-45EE-9BA1-9B6B62E7844B}|ToDo_List_server.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AB4D601-21B1-45EE-9BA1-9B6B62E7844B}|ToDo_List_server.csproj|c:\\users\\alexe\\source\\repos\\todo_list_server\\pages\\fetchdata.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8AB4D601-21B1-45EE-9BA1-9B6B62E7844B}|ToDo_List_server.csproj|solutionrelative:pages\\fetchdata.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TodoItem.cs",
+              "DocumentMoniker": "C:\\Users\\alexe\\source\\repos\\ToDo_List_server\\Models\\TodoItem.cs",
+              "RelativeDocumentMoniker": "Models\\TodoItem.cs",
+              "ToolTip": "C:\\Users\\alexe\\source\\repos\\ToDo_List_server\\Models\\TodoItem.cs",
+              "RelativeToolTip": "Models\\TodoItem.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T14:33:24.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\alexe\\source\\repos\\ToDo_List_server\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\alexe\\source\\repos\\ToDo_List_server\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Shared\\NavMenu.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T13:05:20.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FetchData.razor",
+              "DocumentMoniker": "C:\\Users\\alexe\\source\\repos\\ToDo_List_server\\Pages\\FetchData.razor",
+              "RelativeDocumentMoniker": "Pages\\FetchData.razor",
+              "ToolTip": "C:\\Users\\alexe\\source\\repos\\ToDo_List_server\\Pages\\FetchData.razor",
+              "RelativeToolTip": "Pages\\FetchData.razor",
+              "ViewState": "AQIAABEAAAAAAAAAAAAiwBYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T12:53:12.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Todo.razor",
+              "DocumentMoniker": "C:\\Users\\alexe\\source\\repos\\ToDo_List_server\\Pages\\Todo.razor",
+              "RelativeDocumentMoniker": "Pages\\Todo.razor",
+              "ToolTip": "C:\\Users\\alexe\\source\\repos\\ToDo_List_server\\Pages\\Todo.razor",
+              "RelativeToolTip": "Pages\\Todo.razor",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAADoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T12:16:53.195Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

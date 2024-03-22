@@ -1,0 +1,68 @@
+﻿@page "/todo"
+@using System.Collections
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+
+            <h2 class="text-center">Список дел</h2>
+            <h6 class="text-center" style="color: #999999">Незавершенных: @todos.Count(item => !item.IsDone)</h6>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Название</th>
+                        <th scope="col">Отметка</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (TodoItem item in todos.OrderBy(t => t.IsDone))
+                    {
+                        <tr>
+                            <td>
+                                    <div style="@(item.IsDone ? "color: green; text-decoration: line-through;": "color: red")">
+                                    @item.Title
+                                </div>
+                            </td>
+                            <td>
+                                 <input type="checkbox" @bind="@item.IsDone"/>
+                            </td>
+                            <td>
+                                 <button class="btn btn-danger" @onclick="(() => DeleteTodo(item))">Удалить</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>  
+            </table>
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-control" placeholder="Место для ввода задачи" @bind="newTodo"/>
+                </div>
+                <div class="col">
+                    <button class="btn btn-success" @onclick="AddTodo">Добавить задачу</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    private IList<TodoItem> todos = new List<TodoItem>();
+    private string newTodo;
+    private int curcnt = 0;
+
+    private void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            todos.Add(new TodoItem { Title = newTodo });
+            newTodo = string.Empty;
+        }
+    }
+
+    private void DeleteTodo(TodoItem deletedItem)
+    {
+        todos.Remove(deletedItem);
+    }
+}
